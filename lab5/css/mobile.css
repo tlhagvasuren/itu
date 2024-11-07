@@ -116,6 +116,7 @@ nav {
 #p2 {
     background-color: #13124f;
     font-size: 12px;
+    text-align: center;
 }
 
 #wel {
@@ -175,7 +176,7 @@ nav {
     background-color: #f61067;
     color: white;
     border-color: #f61067;
-    width: 130px;
+    width: 49%;
     height: 30px;
 }
 
@@ -183,7 +184,7 @@ nav {
     background-color: white;
     border-color: #2ad392;
     color: #2ad392;
-    width: 130px;
+    width: 49%;
     height: 30px;
 }
 
