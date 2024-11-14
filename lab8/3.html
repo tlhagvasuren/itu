@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,9 +16,9 @@
         if(t % 36 === 0){
             o = Math.trunc(t / 36);
         }
-        var d = Math.trunc(((t - t * (o - 1)) / 4) + 1);
-        if((t - t * (o - 1)) % 4 === 0){
-            d = Math.trunc(((t - t * (o - 1)) / 4));
+        var d = Math.trunc(((t - 36 * (o - 1)) / 4) + 1);
+        if((t - 36 * (o - 1)) % 4 === 0){
+            d = Math.trunc(((t - 36 * (o - 1)) / 4));
         }
         var h = t % 4;
         if(h % 4 === 0){
