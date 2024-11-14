@@ -8,7 +8,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    gap: 100px;
+    gap: 70px;
     align-items: center;
 }
 
@@ -54,21 +54,26 @@ h3 {
 
 aside {
     margin-top: 10px;
-    margin-left: 40px;
+    margin-left: 50px;
     margin-right: 10px;
     width: 300px;
+}
+
+h3 {
+    text-align: center;
 }
 
 #od {
     width: 30px;
     height: 40px;
     margin-top: 5px;
+    margin-left: 35px;
 }
 
 .zuraas {
     border-left: 1px solid rgb(224, 195, 65);
     height: 350px;
-    margin-left: 15px;
+    margin-left: 50px;
 }
 
 main {
