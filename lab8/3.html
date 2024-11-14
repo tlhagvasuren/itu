@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. orts davhar haalga</title>
+</head>
+<body>
+    <h1>Байшин 9 давхар, 3 орцтой, давхартаа 4 айлтай бол гараас өгсөн тоот нь хэддүгээр орцны хэддүгээр давхарын хэд дэх хаалга вэ</h1>
+    <script>
+        var t = window.prompt("toot: ");
+        console.log(t);
+        t = parseInt(t);
+        var o = Math.trunc((t / 36) + 1);
+        if(t % 36 === 0){
+            o = Math.trunc(t / 36);
+        }
+        var d = Math.trunc(((t - t * (o - 1)) / 4) + 1);
+        if((t - t * (o - 1)) % 4 === 0){
+            d = Math.trunc(((t - t * (o - 1)) / 4));
+        }
+        var h = t % 4;
+        if(h % 4 === 0){
+            h=4;
+        }
+        document.writeln("orts: " + o + " davhar: " + d + " haalga: " + h)
+    </script>
+</body>
+</html>
