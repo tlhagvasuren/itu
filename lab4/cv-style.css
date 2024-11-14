@@ -53,10 +53,22 @@ h3 {
 }
 
 aside {
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 50px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 10px;
     width: 300px;
+}
+
+#od {
+    width: 30px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.zuraas {
+    border-left: 1px solid rgb(224, 195, 65);
+    height: 350px;
+    margin-left: 15px;
 }
 
 main {
@@ -65,7 +77,6 @@ main {
 
 article {
     width: 400px;
-    margin-left: 50px;
 }
 
 p {
