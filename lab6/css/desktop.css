@@ -1,0 +1,693 @@
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.736);    
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+#popup {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+#str {
+    position: relative;
+}
+
+#strdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#str:hover + #strdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#mc {
+    position: relative;
+}
+
+#mcdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#mc:hover + #mcdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#pd {
+    position: relative;
+}
+
+#pddown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#pd:hover + #pddown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#phn {
+    position: relative;
+}
+
+#phndown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#phn:hover + #phndown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#wtch {
+    position: relative;
+}
+
+#wtchdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#wtch:hover + #wtchdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#vsn {
+    position: relative;
+}
+
+#vsndown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#vsn:hover + #vsndown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#rpds {
+    position: relative;
+}
+
+#rpdsdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#rpds:hover + #rpdsdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#tvhm {
+    position: relative;
+}
+
+#tvhmdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#tvhm:hover + #tvhmdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#ent {
+    position: relative;
+}
+
+#entdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#ent:hover + #entdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#access {
+    position: relative;
+}
+
+#accessdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#access:hover + #accessdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#spprt {
+    position: relative;
+}
+
+#spprtdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#spprt:hover + #spprtdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+#list1 {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#gift {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgb(240, 240, 240);
+    padding-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#gift_img {
+    width: 240px;
+    height: 280px;
+}
+
+#shop {
+    width: 120px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 30px;
+    border-color: #007bff;
+    font-size: 16px;
+}
+
+#shop:hover {
+    background-color: #1687ff;
+}
+
+#weeknd {
+    background-image: url(../image/maxresdefault.jpg);
+    background-position: center;
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#watch {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 30px;
+    border-color: rgb(240, 240, 240);
+    font-size: 16px;
+}
+
+#watch:hover {
+    background-color: white;
+}
+
+#book {
+    width: 130px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    border-color: white;
+    font-size: 16px;
+    color: white;
+}
+
+#book:hover {
+    background-color: white;
+    color: black;
+}
+
+#iphone16pro {
+    background-image: url(https://www.apple.com/v/iphone-16-pro/d/images/overview/welcome/hero_endframe__b3cjfkquc2s2_medium.jpg);
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#learn {
+    width: 120px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 30px;
+    border-color: #007bff;
+    font-size: 16px;
+}
+
+#learn:hover {
+    background-color: #1687ff;
+}
+
+#buy {
+    width: 60px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    border-color: #007bff;
+    font-size: 16px;
+    color: #007bff;
+}
+
+#buy:hover {
+    background-color: #1687ff;
+    color: white;
+}
+
+#box {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#iphone16 {
+    background: linear-gradient(to bottom, rgb(8, 8, 93), rgb(173, 180, 230), rgba(255, 255, 255, 0));
+    width: 49%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#l1 {
+    width: 100px;
+    height: 35px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 30px;
+    border-color: rgb(240, 240, 240);
+    font-size: 14px;
+}
+
+#l1:hover {
+    background-color: white;
+}
+
+#b1 {
+    width: 70px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    border-color: white;
+    font-size: 14px;
+    color: white;
+}
+
+#b1:hover {
+    background-color: white;
+    color: black;
+}
+
+#ipimg {
+    width: 100px;
+    height: 350px;
+}
+
+#ipad {
+    background: linear-gradient(to bottom, rgb(139, 213, 222), rgb(159, 223, 226), rgba(255, 255, 255, 0));
+    width: 49%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.l2 {
+    width: 100px;
+    height: 35px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 30px;
+    border-color: #007bff;
+    font-size: 14px;
+}
+
+.l2:hover {
+    background-color: #1687ff;
+}
+
+.b2 {
+    width: 70px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    border-color: #007bff;
+    font-size: 14px;
+    color: #007bff;
+}
+
+.b2:hover {
+    background-color: #1687ff;
+    color: white;
+}
+
+#ipadimg {
+    width: 250px;
+    height: 470px;
+}
+
+#hello {
+    color: black;
+}
+
+#airpods {
+    background-image: url(https://www.apple.com/v/airpods-4/b/images/overview/media-card/media_lifestyle__cyk4qt05xic2_medium.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 49%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.aicon {
+    width: 25px;
+    height: 25px;
+}
+
+#iwatch {
+    background-color: rgb(240, 240, 240);
+    width: 49%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+}
+
+#watchimg {
+    width: 100%;
+    height: auto;
+}
+
+#trade {
+    background-color: rgb(246, 246, 246);
+    width: 49%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+}
+
+#iphones {
+    width: 300px;
+    height: 250px;
+}
+
+.get {
+    width: 130px;
+    height: 35px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 30px;
+    border-color: #007bff;
+    font-size: 14px;
+}
+
+.get:hover {
+    background-color: #1687ff;
+}
+
+#carrier {
+    background-color: rgb(248, 248, 248);
+    width: 49%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#phones {
+    width: 300px;
+    height: 220px;
+}
+
+#img-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 15px;
+}
+
+article {
+    min-width: 90%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    color: white;
+}
+
+#blitz {
+    background-image: url(https://www.picclickimg.com/MzIAAOSwzORnPlqb/Saoirse-Ronan-The-Blitz-film-poster-print.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#img-container button {
+    width: 100px;
+    height: 35px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 30px;
+    border-color: rgb(240, 240, 240);
+    font-size: 14px;
+}
+
+#silo {
+    background-image: url(https://www.firehero.org/wp-content/uploads/2021/04/SILO_thumb.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bad {
+    background-image: url(https://th.bing.com/th/id/OIP.qefLit_Lgc41zhdUTvxlrAHaDy?w=1024&h=523&rs=1&pid=ImgDetMain);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#shrinking {
+    background-image: url(https://www.al.com/resizer/i1gMR_Ha5sZ2d-f2CTH8RuL4I_A=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/R5DLPI4HSFFZTDRAMWGDRQZYGE.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mls {
+    background-image: url(https://th.bing.com/th/id/R.6b885198dd34f2e0573cbd20f703d877?rik=mWawT7A9zy3J3Q&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#charlie {
+    background-image: url(https://th.bing.com/th?id=OIF.H3NV%2fL8sb%2fMETIVmbnSKag&rs=1&pid=ImgDetMain);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#disclaimer {
+    background-image: url(https://tvseriesfinale.com/wp-content/uploads/2024/06/Disclaimer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#slow {
+    background-image: url(https://aubtu.biz/medias/40/2023-12/0-0-slow-horses-season-3-episode-3-recap.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bread {
+    background-image: url(https://th.bing.com/th/id/R.5bcb1b697ebfe9e5b6db56fc18d40f3b?rik=ghN4DHEdpEK%2b8Q&riu=http%3a%2f%2fwww.impawards.com%2f2001%2fposters%2fbread_and_roses.jpg&ehk=VDSRZcHGscQrgfX3bbJRPOwvhUCMb%2bRhZKKfAvEjrSE%3d&risl=&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#ted {
+    background-image: url(https://miro.medium.com/v2/resize:fit:980/1*IZPqAhLfKwwFc0mhl4Zavw.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.prev {
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+.next {
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+footer {
+    background-color: rgb(245, 245, 245);
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding-left: 0;
+}

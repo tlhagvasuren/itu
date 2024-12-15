@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5. ogloo zereg oroi yazguur</title>
+</head>
+<body>
+    <h1>Вэб сайтруу өглөө ороход гараас өгсөн тооны 2 зэрэгийг, орой ороход гараас өгсөн тооны язгуурыг ол.</h1>
+    <script>
+        const currentTime = new Date(); 
+        const hours = currentTime.getHours();
+        var x = parseInt( window.prompt("Too oruulah"));
+        if(6 <= hours && hours < 18){
+            var y = Math.pow(x, 2);
+        }
+        else{
+            y = Math.sqrt(x);
+        }
+        document.writeln(y);
+    </script>
+</body>
+</html>

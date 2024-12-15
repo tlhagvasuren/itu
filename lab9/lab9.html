@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hangman-game</title>
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:480px)"/>
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width:481px) and (max-width:768px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width:769px)"/>
+    <script src="js/word-list.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="game-modal">
+        <div class="content">
+            <img src="#" alt="emoji">
+            <h4>Тоглоом дууслаа!</h4>
+            <p>Зөв үг бол: <b></b></p>
+            <button class="play-again">Дахин тоглох</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="hangman-box">
+            <img src="#" draggable="false" alt="hangman-img">
+            <h1>Монгол ахуйн тухай Hangman тоглоом</h1>
+        </div>
+        <div class="game-box">
+            <ul class="word-display"></ul>
+            <h4 class="hint-text">Тайлбар: <b></b></h4>
+            <h4 class="guesses-text">Алдаа: <b></b></h4>
+            <div class="keyboard"></div>
+        </div>
+    </div>
+</body>
+</html>
