@@ -3,11 +3,7 @@ header {
     height: 50px;
     display: flex;
     justify-content: space-around;
-<<<<<<< HEAD
-    background-color: rgba(255, 255, 255, 0.953);    
-=======
     background-color: rgba(255, 255, 255, 0.736);    
->>>>>>> 53d46fd (lab)
     align-items: center;
     position: sticky;
     top: 0;
@@ -18,8 +14,6 @@ header a {
     color: black;
 }
 
-<<<<<<< HEAD
-=======
 #popup {
     display: flex;
     justify-content: space-around;
@@ -235,19 +229,15 @@ header a {
     justify-content: space-around;
 }
 
->>>>>>> 53d46fd (lab)
 .icon {
     width: 16px;
     height: 16px;
 }
 
-<<<<<<< HEAD
-=======
 #list1 {
     display: none;
 }
 
->>>>>>> 53d46fd (lab)
 main {
     display: flex;
     flex-direction: column;
@@ -563,17 +553,6 @@ main {
     display: flex;
     overflow: hidden;
     position: relative;
-<<<<<<< HEAD
-}
-
-#img-container article {
-    
-}
-
-article {
-    width: 100%;
-    height: 670px;
-=======
     max-width: 100%;
 }
 
@@ -586,7 +565,6 @@ article {
 article {
     min-width: 90%;
     height: 600px;
->>>>>>> 53d46fd (lab)
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -598,10 +576,7 @@ article {
     background-image: url(https://www.picclickimg.com/MzIAAOSwzORnPlqb/Saoirse-Ronan-The-Blitz-film-poster-print.webp);
     background-size: cover;
     background-position: center;
-<<<<<<< HEAD
-=======
     background-repeat: no-repeat;
->>>>>>> 53d46fd (lab)
 }
 
 #img-container button {
@@ -617,44 +592,27 @@ article {
     background-image: url(https://www.firehero.org/wp-content/uploads/2021/04/SILO_thumb.jpg);
     background-size: cover;
     background-position: center;
-<<<<<<< HEAD
-=======
     background-repeat: no-repeat;
->>>>>>> 53d46fd (lab)
 }
 
 #bad {
     background-image: url(https://th.bing.com/th/id/OIP.qefLit_Lgc41zhdUTvxlrAHaDy?w=1024&h=523&rs=1&pid=ImgDetMain);
     background-size: cover;
     background-position: center;
-<<<<<<< HEAD
-=======
     background-repeat: no-repeat;
->>>>>>> 53d46fd (lab)
 }
 
 #shrinking {
     background-image: url(https://www.al.com/resizer/i1gMR_Ha5sZ2d-f2CTH8RuL4I_A=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/R5DLPI4HSFFZTDRAMWGDRQZYGE.png);
     background-size: cover;
     background-position: center;
-<<<<<<< HEAD
-=======
     background-repeat: no-repeat;
->>>>>>> 53d46fd (lab)
 }
 
 #mls {
     background-image: url(https://th.bing.com/th/id/R.6b885198dd34f2e0573cbd20f703d877?rik=mWawT7A9zy3J3Q&pid=ImgRaw&r=0);
     background-size: cover;
     background-position: center;
-<<<<<<< HEAD
-}
-
-#charlie {
-    background-image: url(https://th.bing.com/th?id=OIF.ZiKEStQknXA%2fk67SD66MFQ&rs=1&pid=ImgDetMain);
-    background-size: cover;
-    background-position: center;
-=======
     background-repeat: no-repeat;
 }
 
@@ -663,45 +621,33 @@ article {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
->>>>>>> 53d46fd (lab)
 }
 
 #disclaimer {
     background-image: url(https://tvseriesfinale.com/wp-content/uploads/2024/06/Disclaimer.jpg);
     background-size: cover;
     background-position: center;
-<<<<<<< HEAD
-=======
     background-repeat: no-repeat;
->>>>>>> 53d46fd (lab)
 }
 
 #slow {
     background-image: url(https://aubtu.biz/medias/40/2023-12/0-0-slow-horses-season-3-episode-3-recap.webp);
     background-size: cover;
     background-position: center;
-<<<<<<< HEAD
-=======
     background-repeat: no-repeat;
->>>>>>> 53d46fd (lab)
 }
 
 #bread {
     background-image: url(https://th.bing.com/th/id/R.5bcb1b697ebfe9e5b6db56fc18d40f3b?rik=ghN4DHEdpEK%2b8Q&riu=http%3a%2f%2fwww.impawards.com%2f2001%2fposters%2fbread_and_roses.jpg&ehk=VDSRZcHGscQrgfX3bbJRPOwvhUCMb%2bRhZKKfAvEjrSE%3d&risl=&pid=ImgRaw&r=0);
     background-size: cover;
     background-position: center;
-<<<<<<< HEAD
-=======
     background-repeat: no-repeat;
->>>>>>> 53d46fd (lab)
 }
 
 #ted {
     background-image: url(https://miro.medium.com/v2/resize:fit:980/1*IZPqAhLfKwwFc0mhl4Zavw.jpeg);
     background-size: cover;
     background-position: center;
-<<<<<<< HEAD
-=======
     background-repeat: no-repeat;
 }
 
@@ -725,7 +671,6 @@ article {
     color: white;
     border: none;
     padding: 10px;
->>>>>>> 53d46fd (lab)
 }
 
 footer {
@@ -745,9 +690,4 @@ footer {
 #menu ul {
     list-style-type: none;
     padding-left: 0;
-<<<<<<< HEAD
 }
-
-=======
-}
->>>>>>> 53d46fd (lab)
