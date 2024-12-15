@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мэдээний сайт</title>
+</head>
+<body>
+    <script>
+        // RSS өгөгдөл авах
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "rss.xml");
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(xhr.responseText, "text/xml");
+               console.log(xmlDoc);
+            } else {
+                console.error("RSS татахад алдаа гарлаа."); // herwee ogogdol amjilttai irvel console deer ogogdliig hewlene
+            }
+        };
+        xhr.onerror = function () {
+            console.error("Хүсэлт илгээхэд алдаа гарлаа."); //ogogdliig awahad aldaa garwal console deer ug string hewlegdene
+        };
+        xhr.send();
+
+    </script>
+</body>
+</html>

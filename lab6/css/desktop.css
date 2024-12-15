@@ -3,7 +3,11 @@ header {
     height: 50px;
     display: flex;
     justify-content: space-around;
+<<<<<<< HEAD
     background-color: rgba(255, 255, 255, 0.953);    
+=======
+    background-color: rgba(255, 255, 255, 0.736);    
+>>>>>>> 53d46fd (lab)
     align-items: center;
     position: sticky;
     top: 0;
@@ -14,11 +18,236 @@ header a {
     color: black;
 }
 
+<<<<<<< HEAD
+=======
+#popup {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+#str {
+    position: relative;
+}
+
+#strdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#str:hover + #strdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#mc {
+    position: relative;
+}
+
+#mcdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#mc:hover + #mcdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#pd {
+    position: relative;
+}
+
+#pddown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#pd:hover + #pddown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#phn {
+    position: relative;
+}
+
+#phndown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#phn:hover + #phndown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#wtch {
+    position: relative;
+}
+
+#wtchdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#wtch:hover + #wtchdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#vsn {
+    position: relative;
+}
+
+#vsndown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#vsn:hover + #vsndown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#rpds {
+    position: relative;
+}
+
+#rpdsdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#rpds:hover + #rpdsdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#tvhm {
+    position: relative;
+}
+
+#tvhmdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#tvhm:hover + #tvhmdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#ent {
+    position: relative;
+}
+
+#entdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#ent:hover + #entdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#access {
+    position: relative;
+}
+
+#accessdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#access:hover + #accessdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#spprt {
+    position: relative;
+}
+
+#spprtdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+#spprt:hover + #spprtdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+>>>>>>> 53d46fd (lab)
 .icon {
     width: 16px;
     height: 16px;
 }
 
+<<<<<<< HEAD
+=======
+#list1 {
+    display: none;
+}
+
+>>>>>>> 53d46fd (lab)
 main {
     display: flex;
     flex-direction: column;
@@ -334,6 +563,7 @@ main {
     display: flex;
     overflow: hidden;
     position: relative;
+<<<<<<< HEAD
 }
 
 #img-container article {
@@ -343,6 +573,20 @@ main {
 article {
     width: 100%;
     height: 670px;
+=======
+    max-width: 100%;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 15px;
+}
+
+article {
+    min-width: 90%;
+    height: 600px;
+>>>>>>> 53d46fd (lab)
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -354,6 +598,10 @@ article {
     background-image: url(https://www.picclickimg.com/MzIAAOSwzORnPlqb/Saoirse-Ronan-The-Blitz-film-poster-print.webp);
     background-size: cover;
     background-position: center;
+<<<<<<< HEAD
+=======
+    background-repeat: no-repeat;
+>>>>>>> 53d46fd (lab)
 }
 
 #img-container button {
@@ -369,54 +617,115 @@ article {
     background-image: url(https://www.firehero.org/wp-content/uploads/2021/04/SILO_thumb.jpg);
     background-size: cover;
     background-position: center;
+<<<<<<< HEAD
+=======
+    background-repeat: no-repeat;
+>>>>>>> 53d46fd (lab)
 }
 
 #bad {
     background-image: url(https://th.bing.com/th/id/OIP.qefLit_Lgc41zhdUTvxlrAHaDy?w=1024&h=523&rs=1&pid=ImgDetMain);
     background-size: cover;
     background-position: center;
+<<<<<<< HEAD
+=======
+    background-repeat: no-repeat;
+>>>>>>> 53d46fd (lab)
 }
 
 #shrinking {
     background-image: url(https://www.al.com/resizer/i1gMR_Ha5sZ2d-f2CTH8RuL4I_A=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/R5DLPI4HSFFZTDRAMWGDRQZYGE.png);
     background-size: cover;
     background-position: center;
+<<<<<<< HEAD
+=======
+    background-repeat: no-repeat;
+>>>>>>> 53d46fd (lab)
 }
 
 #mls {
     background-image: url(https://th.bing.com/th/id/R.6b885198dd34f2e0573cbd20f703d877?rik=mWawT7A9zy3J3Q&pid=ImgRaw&r=0);
     background-size: cover;
     background-position: center;
+<<<<<<< HEAD
 }
 
 #charlie {
     background-image: url(https://th.bing.com/th?id=OIF.ZiKEStQknXA%2fk67SD66MFQ&rs=1&pid=ImgDetMain);
     background-size: cover;
     background-position: center;
+=======
+    background-repeat: no-repeat;
+}
+
+#charlie {
+    background-image: url(https://th.bing.com/th?id=OIF.H3NV%2fL8sb%2fMETIVmbnSKag&rs=1&pid=ImgDetMain);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+>>>>>>> 53d46fd (lab)
 }
 
 #disclaimer {
     background-image: url(https://tvseriesfinale.com/wp-content/uploads/2024/06/Disclaimer.jpg);
     background-size: cover;
     background-position: center;
+<<<<<<< HEAD
+=======
+    background-repeat: no-repeat;
+>>>>>>> 53d46fd (lab)
 }
 
 #slow {
     background-image: url(https://aubtu.biz/medias/40/2023-12/0-0-slow-horses-season-3-episode-3-recap.webp);
     background-size: cover;
     background-position: center;
+<<<<<<< HEAD
+=======
+    background-repeat: no-repeat;
+>>>>>>> 53d46fd (lab)
 }
 
 #bread {
     background-image: url(https://th.bing.com/th/id/R.5bcb1b697ebfe9e5b6db56fc18d40f3b?rik=ghN4DHEdpEK%2b8Q&riu=http%3a%2f%2fwww.impawards.com%2f2001%2fposters%2fbread_and_roses.jpg&ehk=VDSRZcHGscQrgfX3bbJRPOwvhUCMb%2bRhZKKfAvEjrSE%3d&risl=&pid=ImgRaw&r=0);
     background-size: cover;
     background-position: center;
+<<<<<<< HEAD
+=======
+    background-repeat: no-repeat;
+>>>>>>> 53d46fd (lab)
 }
 
 #ted {
     background-image: url(https://miro.medium.com/v2/resize:fit:980/1*IZPqAhLfKwwFc0mhl4Zavw.jpeg);
     background-size: cover;
     background-position: center;
+<<<<<<< HEAD
+=======
+    background-repeat: no-repeat;
+}
+
+.prev {
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+.next {
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+>>>>>>> 53d46fd (lab)
 }
 
 footer {
@@ -436,5 +745,9 @@ footer {
 #menu ul {
     list-style-type: none;
     padding-left: 0;
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> 53d46fd (lab)
