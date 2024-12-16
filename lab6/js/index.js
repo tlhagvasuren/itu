@@ -2,7 +2,6 @@ let currentSlide = 0;
 
 function showSlide(index) {
     const slider = document.getElementsByClassName("slider");
-    const slides = document.querySelector("article");
 
     if (index >= 9) { 
         currentSlide = 0;
@@ -25,13 +24,15 @@ function prevSlide() {
     showSlide(currentSlide - 1);
 }
 
-document.getElementById('list1').addEventListener('click', function() {
+function opennav() {
     const popup = document.getElementById('popup');
-    if (popup.classList.contains('hidden')) {
-        popup.classList.remove('hidden');
-        popup.classList.add('visible');
-    } else {
-        popup.classList.remove('visible');
-        popup.classList.add('hidden');
-    }
-});
+    document.getElementById("popup").style.width = "100%";
+    console.log("negug");
+}; 
+
+function closenav() {
+    document.getElementById("popup").style.width = "0";
+    console.log("negug");
+}; 
+
+

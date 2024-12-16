@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover Apple’s innovative products, including iPhone, Mac, iPad, and Apple Watch. Explore cutting-edge technology, software, and services designed to simplify and enhance your life.">
+    <meta name="description" content="Discover Apple’s latest innovations: iPhone, Mac, iPad, Apple Watch, and more. Explore technology designed to simplify and enhance your life.">
     <meta property="og:title" content="apple-new-products">
-    <meta property="og:description" content="Discover Apple’s innovative products, including iPhone, Mac, iPad, and Apple Watch. Explore cutting-edge technology, software, and services designed to simplify and enhance your life.">
+    <meta property="og:description" content="Discover Apple’s latest innovations: iPhone, Mac, iPad, Apple Watch, and more. Explore technology designed to simplify and enhance your life.">
     <meta property="og:image" content="./image/apple-logo.png">
     <meta property="og:url" content="https://tlhagvasuren.github.io/itu/lab6/lab6.html">
     <meta property="og:type" content="website">
@@ -20,7 +20,8 @@
 <body style="position: relative;">
     <header>
             <a href="https://www.apple.com/"><img class="icon" src="./image/apple-logo.png" alt="apple icon"></a>
-            <nav id="popup" class="hidden">
+            <nav id="popup">
+                <button onclick="closenav()"><img id="x" src="https://th.bing.com/th/id/R.de83b6d74b8b16260441ab5ec1796157?rik=D7dPbNwdI%2bTkNw&pid=ImgRaw&r=0" alt="x"></button>
                 <a id="str" href="/products">Store</a>
                 <section id="strdown">
                     <nav>
@@ -331,7 +332,7 @@
             </nav>
             <a href="https://www.apple.com/us/search"><img class="icon" src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png" alt="search"></a>
             <a href="https://www.apple.com/store"><img class="icon" src="https://th.bing.com/th/id/R.723858761a35ac430548b91229802dea?rik=4gZ1%2bJHRckGo2A&pid=ImgRaw&r=0" alt="bag"></a>
-            <img id="list1" src="https://www.pngarts.com/files/2/List-PNG-Image.png" alt="list">
+            <img id="list1" onclick="opennav()" src="https://www.pngarts.com/files/2/List-PNG-Image.png" alt="list">
     </header>
     
     <main>
@@ -418,76 +419,96 @@
         </div>
         <div id="img-container">
             <div class="slider">
-                <article id="blitz">
-                    <button>Stream now</button>
-                    <p><b>Drama</b> Saoirse Ronan stars in a wartime family epic from director Steve McQueen.</p>
-                    <div style="display: flex; align-items: center;">
+                <article id="blitz" class="slide">
+                    <div class="q">
+                        <button>Stream now</button>
+                        <p><b>Drama</b> Saoirse Ronan stars in a wartime family epic from director Steve McQueen.</p>
+                        <div style="display: flex; align-items: center;">
                         <img class="icon" src="./image/apple-logo.png" alt="logo">
                         <b style="font-size: 40px;">tv+</b style="font-size: 40px;">  
                     </div>
+                    </div>
                 </article>
-                <article id="silo">
-                    <button>Stream now</button>
-                    <p><b>Sci-Fi</b> New season.</p>
-                    <div style="display: flex; align-items: center;">
+                <article id="silo" class="slide">
+                    <div class="q">
+                        <button>Stream now</button>
+                        <p><b>Sci-Fi</b> New season.</p>
+                        <div style="display: flex; align-items: center;">
                         <img class="icon" src="./image/apple-logo.png" alt="logo">
                         <b style="font-size: 40px;">tv+</b style="font-size: 40px;">    
                     </div>
+                    </div>
                 </article>
-                <article id="bad">
-                    <button>Stream now</button>
-                    <p><b>Drama</b> New season.</p>
-                    <div style="display: flex; align-items: center;">
+                <article id="bad" class="slide">
+                    <div class="q">
+                        <button>Stream now</button>
+                        <p><b>Drama</b> New season.</p>
+                        <div style="display: flex; align-items: center;">
                         <img class="icon" src="./image/apple-logo.png" alt="logo">
                         <b style="font-size: 40px;">tv+</b style="font-size: 40px;">    
                     </div>
+                    </div>
                 </article>
-                <article id="shrinking">
-                    <button>Stream now</button>
-                    <p><b>Comedy</b> Breakdown. Breakthrough.</p>
-                    <div style="display: flex; align-items: center;">
+                <article id="shrinking" class="slide">
+                    <div class="q">
+                        <button>Stream now</button>
+                        <p><b>Comedy</b> Breakdown. Breakthrough.</p>
+                        <div style="display: flex; align-items: center;">
                         <img class="icon" src="./image/apple-logo.png" alt="logo">
                         <b style="font-size: 40px;">tv+</b style="font-size: 40px;">    
                     </div>
+                    </div>
                 </article>
-                <article id="mls">
-                    <button>See the schedule</button>
-                    <p>Watch the entire MLS Cup Playoffs live.</p>
+                <article id="mls" class="slide">
+                    <div class="q">
+                        <button>See the schedule</button>
+                        <p>Watch the entire MLS Cup Playoffs live.</p>
+                    </div>
                 </article>
-                <article id="charlie">
-                    <button>Stream now</button>
-                    <p><b>Holiday</b> Happiness is togetherness.</p>
+                <article id="charlie" class="slide">
+                    <div class="q">
+                        <button>Stream now</button>
+                        <p><b>Holiday</b> Happiness is togetherness.</p>
+                    </div>
                 </article>
-                <article id="disclaimer">
-                    <button>Stream now</button>
-                    <p><b>Thriller</b> Any resemblance to persons living or dead is not a coincidence.</p>
-                    <div style="display: flex; align-items: center;">
+                <article id="disclaimer" class="slide">
+                    <div class="q">
+                        <button>Stream now</button>
+                        <p><b>Thriller</b> Any resemblance to persons living or dead is not a coincidence.</p>
+                        <div style="display: flex; align-items: center;">
                         <img class="icon" src="./image/apple-logo.png" alt="logo">
                         <b style="font-size: 40px;">tv+</b style="font-size: 40px;">    
                     </div>
+                    </div>
                 </article>
-                <article id="slow">
-                    <button>Stream now</button>
-                    <p><b>Thriller</b> Emmy Award winner.</p>
-                    <div style="display: flex; align-items: center;">
+                <article id="slow" class="slide">
+                    <div class="q">
+                        <button>Stream now</button>
+                        <p><b>Thriller</b> Emmy Award winner.</p>
+                        <div style="display: flex; align-items: center;">
                         <img class="icon" src="./image/apple-logo.png" alt="logo">
                         <b style="font-size: 40px;">tv+</b style="font-size: 40px;">    
                     </div>
-                </article>
-                <article id="bread">
-                    <button>Stream now</button>
-                    <p><b>Documentary</b> A fight for women's rights after the Taliban's resurgence in Kabul.</p>
-                    <div style="display: flex; align-items: center;">
-                        <img class="icon" src="./image/apple-logo.png" alt="logo">
-                        <b style="font-size: 40px;">tv+</b style="font-size: 40px;">    
                     </div>
                 </article>
-                <article id="ted">
-                    <button>Stream now</button>
+                <article id="bread" class="slide">
+                    <div class="q">
+                            <button>Stream now</button>
+                        <p><b>Documentary</b> A fight for women's rights after the Taliban's resurgence in Kabul.</p>
+                        <div style="display: flex; align-items: center;">
+                            <img class="icon" src="./image/apple-logo.png" alt="logo">
+                            <b style="font-size: 40px;">tv+</b style="font-size: 40px;">    
+                        </div>
+                    </div>
+                </article>
+                <article id="ted" class="slide">
+                    <div class="q">
+                        <button>Stream now</button>
                     <p><b>Comedy</b> Kindness makes a comeback.</p>
                     <div style="display: flex; align-items: center;">
                         <img class="icon" src="./image/apple-logo.png" alt="logo">
                         <b style="font-size: 40px;">tv+</b style="font-size: 40px;">    
+                    </div>
                     </div>
                 </article>
             </div>
@@ -517,11 +538,11 @@
             <nav>
                 <h4>Shop and Learn</h4>
                 <ul>
-                    <li>Store</li>
-                    <li>Mac</li>
-                    <li>iPad</li>
-                    <li>iPhone</li>
-                    <li>Watch</li>
+                    <a style="text-decoration: none; color: grey;" href="/store"><li>Store</li></a>
+                    <a style="text-decoration: none; color: grey;" href="/mac"><li>Mac</li></a>
+                    <a style="text-decoration: none; color: grey;" href="/ipad"><li>iPad</li></a>
+                    <a style="text-decoration: none; color: grey;" href="/iphone"><li>iPhone</li></a>
+                    <a style="text-decoration: none; color: grey;" href="/watch"><li>Watch</li></a>
                     <li>Vision</li>
                     <li>AirPods</li>
                     <li>TV & Home</li>
@@ -618,6 +639,7 @@
                     <li>Investors</li>
                     <li>Ethics & Compliance</li>
                     <li>Events</li>
+
                     <li>Contact Apple</li>
                 </ul>
             </nav>

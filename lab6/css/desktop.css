@@ -4,7 +4,7 @@ header {
     display: flex;
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.736);    
-    align-items: center;
+    align-items: end;
     position: sticky;
     top: 0;
 }
@@ -12,12 +12,17 @@ header {
 header a {
     text-decoration: none;
     color: black;
+    height: 40px;
 }
 
 #popup {
     display: flex;
     justify-content: space-around;
     width: 90%;
+}
+
+#popup button {
+    display: none;
 }
 
 #str {
@@ -34,7 +39,8 @@ header a {
     width: 100%;
 }
 
-#str:hover + #strdown {
+#str:hover + #strdown,
+#strdown:hover {
     display: flex;
     justify-content: space-around;
 }
@@ -53,7 +59,8 @@ header a {
     width: 100%;
 }
 
-#mc:hover + #mcdown {
+#mc:hover + #mcdown,
+#mcdown:hover {
     display: flex;
     justify-content: space-around;
 }
@@ -72,7 +79,8 @@ header a {
     width: 100%;
 }
 
-#pd:hover + #pddown {
+#pd:hover + #pddown,
+#pddown:hover {
     display: flex;
     justify-content: space-around;
 }
@@ -91,7 +99,8 @@ header a {
     width: 100%;
 }
 
-#phn:hover + #phndown {
+#phn:hover + #phndown,
+#phndown:hover {
     display: flex;
     justify-content: space-around;
 }
@@ -110,7 +119,8 @@ header a {
     width: 100%;
 }
 
-#wtch:hover + #wtchdown {
+#wtch:hover + #wtchdown,
+#wtchdown:hover {
     display: flex;
     justify-content: space-around;
 }
@@ -129,7 +139,8 @@ header a {
     width: 100%;
 }
 
-#vsn:hover + #vsndown {
+#vsn:hover + #vsndown,
+#vsndown:hover {
     display: flex;
     justify-content: space-around;
 }
@@ -148,7 +159,8 @@ header a {
     width: 100%;
 }
 
-#rpds:hover + #rpdsdown {
+#rpds:hover + #rpdsdown,
+#rpdsdown:hover {
     display: flex;
     justify-content: space-around;
 }
@@ -167,7 +179,8 @@ header a {
     width: 100%;
 }
 
-#tvhm:hover + #tvhmdown {
+#tvhm:hover + #tvhmdown,
+#tvhmdown:hover {
     display: flex;
     justify-content: space-around;
 }
@@ -186,7 +199,8 @@ header a {
     width: 100%;
 }
 
-#ent:hover + #entdown {
+#ent:hover + #entdown,
+#entdown:hover {
     display: flex;
     justify-content: space-around;
 }
@@ -205,7 +219,8 @@ header a {
     width: 100%;
 }
 
-#access:hover + #accessdown {
+#access:hover + #accessdown,
+#accessdown:hover {
     display: flex;
     justify-content: space-around;
 }
@@ -224,7 +239,8 @@ header a {
     width: 100%;
 }
 
-#spprt:hover + #spprtdown {
+#spprt:hover + #spprtdown,
+#spprtdown:hover {
     display: flex;
     justify-content: space-around;
 }
@@ -553,23 +569,25 @@ main {
     display: flex;
     overflow: hidden;
     position: relative;
-    max-width: 100%;
+    width: 100%;
 }
 
 .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    gap: 15px;
 }
 
-article {
-    min-width: 90%;
-    height: 600px;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+.slide {
+    display: grid;
+    grid-template-columns: auto;
     padding-bottom: 30px;
     color: white;
+    min-width: 100%;
+}
+
+.q {
+    margin-top: 200px;
+    margin-left: 50px;
 }
 
 #blitz {
@@ -577,6 +595,8 @@ article {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
 }
 
 #img-container button {
@@ -593,6 +613,8 @@ article {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
 }
 
 #bad {
@@ -600,6 +622,8 @@ article {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
 }
 
 #shrinking {
@@ -607,6 +631,8 @@ article {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
 }
 
 #mls {
@@ -614,6 +640,8 @@ article {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
 }
 
 #charlie {
@@ -621,6 +649,8 @@ article {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
 }
 
 #disclaimer {
@@ -628,6 +658,8 @@ article {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
 }
 
 #slow {
@@ -635,6 +667,8 @@ article {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
 }
 
 #bread {
@@ -642,6 +676,8 @@ article {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
 }
 
 #ted {
@@ -649,13 +685,15 @@ article {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
 }
 
 .prev {
     left: 10px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
@@ -666,7 +704,7 @@ article {
     right: 10px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;

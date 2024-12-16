@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
 
-Sitemap: https://tlhagvasuren.github.io/lab6/sitemap.xml
+Sitemap: https://tlhagvasuren.github.io/lab6/lab6.html/sitemap.xml
