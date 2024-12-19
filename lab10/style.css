@@ -73,7 +73,7 @@ main {
     background-size: cover;
     background-position: center;
     border-radius: 8px;
-    background-image: url('https://via.placeholder.com/300x150?text=No+Image'); /* Fallback for no image */
+    background-image: url('https://via.placeholder.com/300x150?text=No+Image'); 
     transition: background-image 0.3s ease;
 }
 
