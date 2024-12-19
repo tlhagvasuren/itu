@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мэдээний дэлгэрэнгүй</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Мэдээний дэлгэрэнгүй</h1>
+    </header>
+    <main>
+        <div id="news-details" class="news-details"></div>
+    </main>
+
+    <script>
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "rss.xml");
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(xhr.responseText, "text/xml");
+
+                const params = new URLSearchParams(window.location.search);
+                const index = parseInt(params.get("index"), 10);
+                const items = xmlDoc.getElementsByTagName("item");
+
+                if (!isNaN(index) && index >= 0 && index < items.length) {
+                    const item = items[index];
+                    const title = item.getElementsByTagName("title")[0]?.textContent || "No Title";
+                    const description = item.getElementsByTagName("description")[0]?.textContent || "No Description Available";
+                    const pubDate = item.getElementsByTagName("pubDate")[0]?.textContent || "No Date Available";
+                    const link = item.getElementsByTagName("link")[0]?.textContent || "#";
+
+                    const imageMatch = description.match(/<img.*?src=["'](.*?)["']/);
+                    const baseURL = "https://ikon.mn";
+                    const thumbnailURL = imageMatch
+                        ? new URL(imageMatch[1], baseURL).href
+                        : "https://via.placeholder.com/600x300?text=No+Image";
+
+                    const newsDetails = document.getElementById("news-details");
+                    newsDetails.innerHTML = `
+                        <div class="details-card">
+                            <img src="${thumbnailURL}" alt="News Image" class="details-thumbnail" />
+                            <h2>${title}</h2>
+                            <p>${description}</p>
+                            <small>${pubDate}</small>
+                            <p><a href="${link}" target="_blank" class="source-link">Эх сурвалжийг үзэх</a></p>
+                        </div>
+                    `;
+                } else {
+                    document.getElementById("news-details").innerHTML = `
+                        <p>Мэдээний индекс олдсонгүй эсвэл буруу байна.</p>
+                    `;
+                }
+            } else {
+                console.error("RSS файл татахад алдаа гарлаа.");
+            }
+        };
+
+        xhr.onerror = function () {
+            console.error("Файл уншихад алдаа гарлаа.");
+        };
+
+        xhr.send();
+
+    </script>
+</body>
+</html>

@@ -3,27 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мэдээний сайт</title>
+    <title>Мэдээний жагсаалт</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Мэдээний жагсаалт</h1>
+    </header>
+    <main>
+        <div class="type_card">
+            <ul class="list_type_card" id="news-list"></ul>
+        </div>
+    </main>
+
     <script>
-        // RSS өгөгдөл авах
         const xhr = new XMLHttpRequest();
         xhr.open("GET", "rss.xml");
         xhr.onload = function () {
             if (xhr.status === 200) {
                 const parser = new DOMParser();
                 const xmlDoc = parser.parseFromString(xhr.responseText, "text/xml");
-               console.log(xmlDoc);
+                const items = xmlDoc.getElementsByTagName("item");
+                const newsList = document.getElementById("news-list");
+
+                for (let i = 0; i < items.length; i++) {
+                    const title = items[i].getElementsByTagName("title")[0]?.textContent || "No Title";
+                    const description = items[i].getElementsByTagName("description")[0]?.textContent || "No description available";
+                    const pubDate = items[i].getElementsByTagName("pubDate")[0]?.textContent || "No date available";
+
+                    const imageMatch = description.match(/<img.*?src=["'](.*?)["']/);
+                    const thumbnailURL = imageMatch ? imageMatch[1] : "https://via.placeholder.com/300x150?text=No+Image";
+
+                    const listItem = document.createElement("li");
+                    listItem.classList.add("item_card");
+
+                    listItem.innerHTML = `
+                    <a href="details.html?index=${i}" class="link_card">
+                        <div class="thumbnail" style="background-image: url('${thumbnailURL}');"></div>
+                        <strong>${title}</strong>
+                        <div class="text">${description.replace(/<[^>]*>?/gm, '').substring(0, 100)}...</div>
+                        <small>${pubDate}</small>
+                    </a>
+                    `;
+
+                    newsList.appendChild(listItem);
+                }
             } else {
-                console.error("RSS татахад алдаа гарлаа."); // herwee ogogdol amjilttai irvel console deer ogogdliig hewlene
+                console.error("RSS татахад алдаа гарлаа.");
             }
         };
-        xhr.onerror = function () {
-            console.error("Хүсэлт илгээхэд алдаа гарлаа."); //ogogdliig awahad aldaa garwal console deer ug string hewlegdene
-        };
-        xhr.send();
 
+        xhr.onerror = function () {
+            console.error("Хүсэлт илгээхэд алдаа гарлаа.");
+        };
+
+        xhr.send();
     </script>
 </body>
 </html>
